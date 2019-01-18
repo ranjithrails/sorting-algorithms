@@ -3,7 +3,7 @@ var arrElem = elem;
 var minElem;
 for(j=0;j<arrElem.length;j++){
 minElem = j;
-for(i=0;i<arrElem.length;i++) {
+for(i=j+1;i<arrElem.length;i++) {
 	if(arrElem[i]<arrElem[minElem])
 {
 	minElem = i
