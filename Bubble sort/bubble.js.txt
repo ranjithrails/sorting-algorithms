@@ -1,0 +1,26 @@
+function bubblesort(elem)
+{
+var arrElm = elem;
+for(j=arrElm.length;j>0;j--)
+{
+for(i=0;i<j-1;i++)
+{
+if(arrElm[i]>arrElm[i+1])
+{
+var temp = arrElm[i];
+arrElm[i] = arrElm[i+1];
+arrElm[i+1] = temp
+}
+}
+}
+return arrElm;
+}
+
+bubbleSort([7,5,2,4,3,9]);
+
+Initial array = [7,5,2,4,3,9]
+first iteration = [5,7,2,4,3,9]
+second iteration = [5,2,7,4,3,9]
+third iteration = [5,2,4,7,3,9]
+four iteration = [5,2,4,3,7,9]
+five iteration = [5,2,4,3,7,9]
